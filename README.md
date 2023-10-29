@@ -12,23 +12,23 @@ Before running the tests, you need to have the following software and dependenci
 
 To install the project dependencies, follow these steps:
 
-1. Clone this repository to your local machine: `git clone https://github.com/yourusername/playwright-test-project.git`
-2. Navigate to the project folder: `cd playwright-test-project`
+1. Clone this repository to your local machine: `git clone https://github.com/YuriiHryshko/playwrightTask.git`
+2. Navigate to the project folder: `cd playwrightTask`
 3. Install the required dependencies: `npm install`
 
 ## Steps to Run Tests
 
 You can run the tests with the following command:
 
-`npx playwright test`
+`npm run test`
 
-This command will execute all the tests in different browsers (Chromium, Firefox, and WebKit).
+The command runs Playwright tests in different browsers (Chromium, Firefox, and WebKit), sets the environment variable to specify where Allure test results should be stored, and uses two reporters: the "line" reporter for basic textual output and the "allure-playwright" reporter for generating Allure report data in the specified directory.
 
 ## Steps to Generate Test Reports
 
-To generate test reports and view the results, you can use Playwright's built-in reporters. Run the tests with the --reporter flag, specifying the desired reporter. For example, to generate an HTML report, use:
+After running the tests with the "test" script, you can use these scripts:
 
-`npx playwright test --reporter=html`
+1. Generate an Allure test report: `npm run generate-allure-report`
 
-You will find the generated report in the test-results folder.
+2. View Allure test report in your browser: `npm run open-allure-report`
 
