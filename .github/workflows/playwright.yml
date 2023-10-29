@@ -11,6 +11,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install Playwright browsers
+        run: npx playwright install
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
