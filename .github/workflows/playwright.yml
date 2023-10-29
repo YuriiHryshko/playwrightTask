@@ -6,22 +6,12 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  e2e-tests:
+    runs-on: macos-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14
-
     - name: Install dependencies
       run: npm install
 
     - name: Run Playwright tests
       uses: microsoft/playwright-github-action@v1.5.5
-      with:
-        browserType: chromium # Замість chromium можна вказати "firefox" або "webkit" в залежності від потреб тестів
