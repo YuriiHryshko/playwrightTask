@@ -14,7 +14,7 @@ To install the project dependencies, follow these steps:
 
 1. Clone this repository to your local machine: `git clone https://github.com/YuriiHryshko/playwrightTask.git`
 2. Navigate to the project folder: `cd playwrightTask`
-3. Install the required dependencies: `npm install`
+3. Install the required dependencies: `npm ci`
 
 ## Steps to Run Tests
 
@@ -22,7 +22,7 @@ You can run the tests with the following command:
 
 `npm run test`
 
-The command runs Playwright tests in different browsers (Chromium, Firefox, and WebKit), sets the environment variable to specify where Allure test results should be stored, and uses two reporters: the "line" reporter for basic textual output and the "allure-playwright" reporter for generating Allure report data in the specified directory.
+The command runs Playwright tests in different browsers (Chromium, Firefox, and WebKit).
 
 ## Steps to Generate Test Reports
 
